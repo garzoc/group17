@@ -2,27 +2,32 @@
 
 public class Hotel{
 	
-	//private final Hotel hotel[]=new Hotel[100];	
-	/*Hotel(name,dateOfCreation){
-		
-	}*/
-	private final String name;
-	//private final address;
 	
-	public Hotel(String name){
-		this.name=name;
+	//list of variables
+	private String name="";
+	private String address="";
+	private double price=0;
+	private boolean pool=false;
+	private boolean gym=false;
+	private boolean bar=false;
+	private boolean pets=false;
+	private boolean popularity=false;
+	//-----------
+	
+	//the constructor will set all variable to their proper value when the object is created
+	public Hotel(){
+		
 	}
-	
-	/*public void addHotel(){
-		
-	}*/
 	
 	public String getHotelName(){
 		return this.name;
 	}
 	
-	public void getHotelAddress(){
-		
+	public String getHotelAddress(){
+		return this.address;
 	}
+	//create a getMethod for each of the variables
+	
+	
 
 }
