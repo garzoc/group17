@@ -27,6 +27,7 @@ public class Hotel{
 		this.stars=stars;
 	}
 	
+	
 	public String getHotelName(){
 		return this.name;
 	}
@@ -35,23 +36,23 @@ public class Hotel{
 		return this.address;
 	}
 	
-	public String getStars(){
+	public int getStars(){
 		return this.stars;
 	}
-	public String getPrice(){
+	public int getPrice(){
 		return this.price;
 	}
-	public String getPool(){
+	public boolean getPool(){
 		return this.pool;
 	}
-	public String getGym(){
+	public boolean getGym(){
 		return this.gym;
 	}
-	public String getBar(){
+	public boolean getBar(){
 		return this.bar;
 	}
 	
-	public String getPets(){
+	public boolean getPets(){
 		return this.pets;
 	}
 	
