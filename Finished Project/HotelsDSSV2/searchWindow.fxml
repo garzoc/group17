@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0">
+         <children>
+            <Rectangle arcHeight="4.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="1200.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.625">
+                     <stops>
+                        <Stop color="#08070d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="1200.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.625">
+                     <stops>
+                        <Stop color="#1be5f5d6" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button fx:id="startButton" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" text="Start" />
+            <Button fx:id="loginButton" layoutX="986.0" layoutY="23.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="89.0" text="UserLogin">
+               <tooltip>
+                  <Tooltip text="Press to log in as a user for leaving a review" />
+               </tooltip>
+            </Button>
+            <TextField fx:id="searchField" layoutX="90.0" layoutY="73.0" prefHeight="27.0" prefWidth="219.0" promptText="Search">
+               <tooltip>
+                  <Tooltip text="Write a Hotelname" />
+               </tooltip>
+            </TextField>
+            <Button fx:id="searchButton" layoutX="913.0" layoutY="72.0" mnemonicParsing="false" text="Search">
+               <tooltip>
+                  <Tooltip text="Press to preform a Search by Name &amp; Requirements" />
+               </tooltip>
+            </Button>
+            <CheckBox fx:id="barCheck" layoutX="460.0" layoutY="77.0" mnemonicParsing="false" text="Bar" textFill="#060607">
+               <tooltip>
+                  <Tooltip text="Check if you want the hotel to have a Bar" />
+               </tooltip>
+            </CheckBox>
+            <Text layoutX="29.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel DSS">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Apple SD Gothic Neo Bold" size="24.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="gymCheck" layoutX="523.0" layoutY="75.0" mnemonicParsing="false" text="Gym">
+               <tooltip>
+                  <Tooltip text="Check if you want the hotel to have a Gym" />
+               </tooltip>
+            </CheckBox>
+            <CheckBox fx:id="poolCheck" layoutX="580.0" layoutY="76.0" mnemonicParsing="false" text="Pool">
+               <tooltip>
+                  <Tooltip text="Check if you want the hotel to have a Pool" />
+               </tooltip>
+            </CheckBox>
+            <CheckBox fx:id="petsCheck" layoutX="635.0" layoutY="75.0" mnemonicParsing="false" text="Pets">
+               <tooltip>
+                  <Tooltip text="Check if you want the hotel to allowe Pets" />
+               </tooltip>
+            </CheckBox>
+            <ScrollPane fx:id="scroll" layoutY="110.0" prefHeight="640.0" prefWidth="1200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="1200.0" />
+              </content>
+            </ScrollPane>
+            <Button fx:id="adminLoginButton" layoutX="1082.0" layoutY="23.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="104.0" text="Admin Login">
+               <tooltip>
+                  <Tooltip text="Press to login as an administrator" />
+               </tooltip>
+            </Button>
+            <Slider fx:id="starSlide" blockIncrement="1.0" layoutX="703.0" layoutY="85.0" max="5.0" min="1.0" prefHeight="16.0" prefWidth="70.0" />
+            <Text layoutX="725.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stars" />
+            <Text layoutX="787.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+            <Button fx:id="searchByName" layoutX="330.0" layoutY="72.0" mnemonicParsing="false" text="Search by name">
+               <tooltip>
+                  <Tooltip text="Search only by Name" />
+               </tooltip>
+            </Button>
+            <TextField fx:id="priceFrom" layoutX="835.0" layoutY="67.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="58.0" promptText="From">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="PriceTo" layoutX="835.0" layoutY="87.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="58.0" promptText="To">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sortByPriceButton" layoutX="986.0" layoutY="72.0" mnemonicParsing="false" text="Sort by price" />
+            <Button fx:id="sortByRatingButton" layoutX="1090.0" layoutY="72.0" mnemonicParsing="false" text="Sort by rating" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

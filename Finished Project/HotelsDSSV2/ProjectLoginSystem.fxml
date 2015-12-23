@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane alignment="CENTER" layoutX="-1.0" prefHeight="513.0" prefWidth="600.0" text="Welcome">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Login">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="62.0" layoutY="43.0" prefHeight="33.0" prefWidth="93.0" text="User Name" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="loginUserName" layoutX="171.0" layoutY="41.0" prefHeight="31.0" prefWidth="187.0">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <Label layoutX="62.0" layoutY="105.0" prefHeight="33.0" prefWidth="93.0" text="Password" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="E_RESIZE" />
+                                 </cursor>
+                              </Label>
+                              <Button fx:id="loggedInButton" layoutX="270.0" layoutY="194.0" mnemonicParsing="false" text="Login" textFill="#c91717">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="1.14" specularConstant="0.37" surfaceScale="3.72">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                              <PasswordField fx:id="loginPassword" layoutX="171.0" layoutY="103.0" prefHeight="37.0" prefWidth="189.0">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </PasswordField>
+                              <Label fx:id="errorLoginMessage" layoutX="92.0" layoutY="148.0" prefHeight="33.0" prefWidth="392.0" text="Passward" textFill="#ff3826" visible="false">
+                                 <cursor>
+                                    <Cursor fx:constant="E_RESIZE" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Register">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="54.0" layoutY="28.0" prefHeight="26.0" prefWidth="93.0" text="Username *" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="username" layoutX="176.0" layoutY="27.0" prefHeight="29.0" prefWidth="201.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <Label alignment="CENTER" layoutX="54.0" layoutY="70.0" prefHeight="26.0" prefWidth="93.0" text="Email" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="email" layoutX="176.0" layoutY="69.0" prefHeight="29.0" prefWidth="201.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <Label alignment="CENTER" layoutX="54.0" layoutY="110.0" prefHeight="26.0" prefWidth="93.0" text="Password *" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="12.0" layoutY="158.0" prefHeight="26.0" prefWidth="144.0" text="Confirm Password *" textFill="#b23a2f">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="registerUser" layoutX="303.0" layoutY="245.0" mnemonicParsing="false" text="Register" textFill="#c91717">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting diffuseConstant="1.14" specularConstant="0.37" surfaceScale="3.72">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                              <PasswordField fx:id="confirmPassword" layoutX="176.0" layoutY="157.0" prefHeight="21.0" prefWidth="201.0">
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </PasswordField>
+                              <PasswordField fx:id="password" layoutX="176.0" layoutY="109.0" prefHeight="21.0" prefWidth="201.0">
+                                 <effect>
+                                    <Lighting diffuseConstant="0.81" specularConstant="0.72" specularExponent="0.47" surfaceScale="2.08">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </PasswordField>
+                              <Label fx:id="errorMessage" alignment="CENTER" layoutX="101.0" layoutY="198.0" prefHeight="26.0" prefWidth="348.0" text="--" textFill="#fc3624" visible="false">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </content>
+         <font>
+            <Font size="43.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4944444444444444" centerY="0.1571428571428571" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="747.0" prefWidth="967.0">
+         <children>
+            <AnchorPane fx:id="HotelPane" minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="969.0">
+               <children>
+                  <Label fx:id="HotelNameLabel" layoutX="275.0" layoutY="18.0" text="Hotel Name (TestValue)" />
+                  <Label fx:id="GymStatic1" layoutX="447.0" layoutY="130.0" text="Gym: " />
+                  <Label fx:id="PetsStatic1" layoutX="275.0" layoutY="130.0" text="Pets: " />
+                  <Label fx:id="BarStatic1" layoutX="804.0" layoutY="130.0" text="Bar: " />
+                  <Label fx:id="GymLabel" layoutX="493.0" layoutY="130.0" text="TestValue" />
+                  <Label fx:id="PetsLabel" layoutX="318.0" layoutY="130.0" text="TestValue" />
+                  <Label fx:id="BarLabel" layoutX="837.0" layoutY="130.0" text="TestValue" />
+                  <ImageView fx:id="HotelImageBox" fitHeight="159.0" fitWidth="250.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="StarsNumberLabel" layoutX="821.0" layoutY="18.0" text="X" />
+                  <Label fx:id="PriceStatic2" layoutX="750.0" layoutY="71.0" text="Price per night: " />
+                  <Label fx:id="PriceLabel" layoutX="875.0" layoutY="71.0" text="Value" />
+                  <Label fx:id="PoolStatic1" layoutX="616.0" layoutY="130.0" text="Pool: " />
+                  <Label fx:id="PoolLabel" layoutX="661.0" layoutY="130.0" text="TestValue" />
+                  <Label fx:id="StarsStatic1" layoutX="832.0" layoutY="18.0" text=" Star Hotel" />
+                  <Label fx:id="AddressLabel" layoutX="275.0" layoutY="71.0" text="Address (TestValue)" />
+                  <Separator layoutX="264.0" layoutY="58.0" prefHeight="0.0" prefWidth="705.0" />
+                  <Separator layoutX="264.0" layoutY="116.0" prefHeight="0.0" prefWidth="705.0" />
+                  <Separator layoutX="264.0" layoutY="174.0" prefHeight="0.0" prefWidth="705.0" />
+                  <Separator layoutX="432.0" layoutY="116.0" orientation="VERTICAL" prefHeight="58.0" />
+                  <Separator layoutX="601.0" layoutY="116.0" orientation="VERTICAL" prefHeight="58.0" />
+                  <Separator layoutX="789.0" layoutY="116.0" orientation="VERTICAL" prefHeight="58.0" />
+                  <Separator layoutX="735.0" layoutY="58.0" orientation="VERTICAL" prefHeight="58.0" />
+                  <Separator layoutX="806.0" orientation="VERTICAL" prefHeight="58.0" />
+               </children>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="229.0" prefHeight="410.0" prefWidth="969.0">
+              <content>
+                <AnchorPane fx:id="reviewsAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="413.0" prefWidth="968.0">
+                     <children>
+                        <ScrollPane fx:id="veiwScroll" prefHeight="409.0" prefWidth="967.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="412.0" prefWidth="968.0" />
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="leaveReview" layoutX="794.0" layoutY="650.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Leave a Review" />
+            <Button fx:id="returnToSearch" layoutX="14.0" layoutY="650.0" mnemonicParsing="false" text="Return to Hotel Search" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
